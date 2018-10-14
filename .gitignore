@@ -1,0 +1,18 @@
+### Maven ###
+target/
+bin/
+!.mvn/wrapper/maven-wrapper.jar
+.checkstyle
+*.versionsBackup
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Others ###
+*.log
+
+### Package Files ###
+*.jar

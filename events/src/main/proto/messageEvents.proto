@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.roek5803.spring_boot_kafka_example.events";
+option java_outer_classname = "MessageProtos";
+option java_multiple_files = true;
+
+message MessageCreated {
+    string id = 1;
+    string message = 2;
+}
+
+message MessageChanged {
+    string id = 1;
+    string new_message = 2;
+}

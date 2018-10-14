@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_package = "com.roek5803.spring_boot_kafka_example.events";
+option java_outer_classname = "EnvelopeProtos";
+option java_multiple_files = true;
+
+import "messageEvents.proto";
+
+message Envelope {
+    string event_id = 1;
+    int64 timestamp = 2;
+
+    oneof payload {
+        // Customer events
+        MessageCreated message_created = 11;
+        MessageChanged message_changed = 12;
+    }
+
+}

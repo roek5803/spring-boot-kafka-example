@@ -1,0 +1,10 @@
+server.port: 8080
+
+spring:
+  kafka.bootstrap-servers: kafka:9092
+
+app.topic.message: message
+
+logging:
+  level:
+    com.roek5803: DEBUG
